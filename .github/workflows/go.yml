@@ -22,7 +22,7 @@ jobs:
         go-version: '1.24.6'
 
     - name: Build
-      run: -o bin/path-size ./cmd/path-size
+      run: go build -o bin/path-size ./cmd/path-size
 
     - name: Run tests
       run: go test -v ./...
